@@ -18,10 +18,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var shopping = []  
+  var shopping = []
   if (cart.length > 0) {
     for (var x = 0, x < cart.length, x++) {
-      shopping.push(Object.keys(cart[x])
+      shopping.push(Object.keys(cart[x]) + 'at $'  
     }
   }
 }

@@ -48,7 +48,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for (var x = 0; x < cart.length; x++) {
+    if (cart[x].hasOwnProperty(item)) {
+      cart.splice(x, 1)
+      return cart
+    }
+  }
 }
 
 function placeOrder(cardNumber) {

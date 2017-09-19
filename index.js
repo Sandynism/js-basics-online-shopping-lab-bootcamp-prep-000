@@ -40,8 +40,10 @@ function viewCart() {
 }
 
 function total() {
-  var price = 0 
-  for (var p = 0; p < cart.length; p++)
+  var price = 0
+  for (var p = 0; p < cart.length; p++) {
+    price += cart[p][Object.keys(cart[p])]
+    }
 }
 
 function removeFromCart(item) {

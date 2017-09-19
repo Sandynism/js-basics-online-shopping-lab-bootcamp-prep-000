@@ -38,6 +38,7 @@ function viewCart() {
     console.log (`In your cart, you have ${start}, and ${shopping[shopping.length-1]}.`)
   }
 }
+}
 
 function total() {
   // write your code here

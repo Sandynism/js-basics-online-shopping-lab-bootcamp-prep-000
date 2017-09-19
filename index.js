@@ -27,7 +27,10 @@ function viewCart() {
     }
   }
 
-  
+  if (shopping.length === 0) {
+    console.log('Your shopping cart is empty.') 
+    }
+  } 
 }
 
 function total() {

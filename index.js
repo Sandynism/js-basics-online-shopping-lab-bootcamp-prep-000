@@ -33,6 +33,8 @@ function viewCart() {
     console.log(`In your cart, you have ${shopping[0]}.`)
   } else if (shopping.length === 2) {
     console.log(`In your cart, you have ${shopping[0]} and ${shopping[1]}.`)
+  } else (shopping.length >= 3) {
+    var start = shopping.slice(0, shopping.length -1).join(',')
   }
 }
 

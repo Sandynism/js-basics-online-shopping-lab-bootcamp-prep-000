@@ -21,8 +21,8 @@ function viewCart() {
   var shopping = []
   if (cart.length > 0) {
     for (var x = 0, x < cart.length, x++) {
-      for (var item in cart[i]) {
-        shopping.push(item + 'at $' + cart[i][item])
+      for (var item in cart[x]) {
+        shopping.push(item + 'at $' + cart[x][item])
       }
     }
   }
